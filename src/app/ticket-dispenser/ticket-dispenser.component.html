@@ -1,0 +1,8 @@
+<div class="center">
+  <div *ngFor="let category of this.ticketCategories">
+    <form routerLink="/customer-welcome" class="flex-item">
+    <button class="btn btn-danger btn-block" (click)="onTicketRequested($event)" [value]="category.id" >{{ category.name }}</button>
+    </form>
+    <br>
+  </div>
+</div>
